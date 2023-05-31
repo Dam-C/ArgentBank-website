@@ -1,13 +1,19 @@
 import "./App.css";
-import Home from "./pages/home.jsx";
-import Footer from "./components/footer.jsx";
-import TopBanner from "./components/topBanner.jsx";
+import {
+  Home,
+  Footer,
+  TopBanner,
+  LoginPage,
+  UserPage,
+} from "./elementsIndex/elementsIndex.jsx";
 
 function App() {
   return (
     <>
       <TopBanner />
       <Home />
+      <LoginPage />
+      <UserPage />
       <Footer />
     </>
   );
