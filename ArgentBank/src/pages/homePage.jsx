@@ -1,16 +1,10 @@
-import {
-  TopBanner,
-  HomeContent,
-  Footer,
-} from "../0_elementsIndex/elementsIndex.jsx";
+import { HomeContent } from "../0_elementsIndex/elementsIndex.jsx";
 
 const HomePage = () => {
   return (
-    <div>
-      <TopBanner />
+    <article>
       <HomeContent />
-      <Footer />
-    </div>
+    </article>
   );
 };
 
