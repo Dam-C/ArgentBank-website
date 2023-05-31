@@ -1,21 +1,20 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import {
-  Home,
-  Footer,
-  TopBanner,
-  LoginPage,
-  UserPage,
-} from "./elementsIndex/elementsIndex.jsx";
+  HomePage,
+  // Footer,
+  // TopBanner,
+  // LoginPage,
+  // UserPage,
+} from "./0_elementsIndex/elementsIndex.jsx";
 
 function App() {
   return (
-    <>
-      <TopBanner />
-      <Home />
-      <LoginPage />
-      <UserPage />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

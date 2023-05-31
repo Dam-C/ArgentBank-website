@@ -2,7 +2,7 @@ import iconChat from "../assets/icon-chat.png";
 import iconMoney from "../assets/icon-money.png";
 import iconSecurity from "../assets/icon-security.png";
 
-const Home = () => {
+const HomeContent = () => {
   return (
     <>
       <main>
@@ -54,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeContent;
