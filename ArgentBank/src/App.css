@@ -1,3 +1,128 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,10 +141,13 @@ body {
 
 .main {
   flex: 1;
+  height: 100%;
 }
 
 .bg-dark {
   background-color: #12002b;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .sr-only {
@@ -228,18 +356,19 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 1.5rem;
-  text-align: left;
   margin-bottom: 2rem;
 }
 
 .account-head-wrapper {
   display: flex;
   width: 100%;
+  text-align: left;
   justify-content: space-between;
 }
 
 .account-amount {
   margin: 0;
+  margin-bottom: 5px;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -250,11 +379,16 @@ body {
 
 .account-title {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
+.header-greeting {
+  font-size: 2rem;
+  font-weight: bold;
+}
 .account-content-wrapper {
   width: 100%;
   display: flex;
@@ -265,14 +399,16 @@ body {
 .edit-button {
   border-color: #00bc77;
   background-color: #00bc77;
+  border-radius: 5px;
   color: #fff;
   font-weight: bold;
+  margin-top: 20px;
   padding: 10px;
 }
 
 .header {
   color: #fff;
-  margin-bottom: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .transaction-button {
@@ -295,7 +431,7 @@ body {
 }
 
 .transacs-titles {
-  margin: 0 30px 0 10px;
+  margin: 0 15px 0 10px;
 }
 
 .transacs-titles,
@@ -317,11 +453,31 @@ body {
   padding: 10px;
 }
 
-transac-perks {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+.transac-perks {
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  text-align: left;
+  gap: 5px;
+}
+
+.transac-perks :nth-child(1),
+.transac-perks :nth-child(2),
+.transac-perks :nth-child(3),
+.transac-perks :nth-child(4),
+.transac-perks :nth-child(5),
+.transac-perks :nth-child(6) {
+  width: 45%;
+}
+
+.transac-note {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: #fff;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 720px) {

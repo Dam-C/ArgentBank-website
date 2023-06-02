@@ -10,42 +10,42 @@ const TransacsPerks = () => {
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
-  const BACKEND_URL = "http://localhost:3001/api/v1";
+  // const BACKEND_URL = "http://localhost:3001/api/v1";
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const loginIDS = {
-      email: formData.username,
-      password: formData.password,
-    };
-    //console.log(loginIDS);
-    const response = await fetch(`${BACKEND_URL}/user/login`, {
-      method: "PUT",
-      headers: {
-        Accept: "application/json",
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(loginIDS),
-    });
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const loginIDS = {
+  //     email: formData.username,
+  //     password: formData.password,
+  //   };
+  //   //console.log(loginIDS);
+  //   const response = await fetch(`${BACKEND_URL}/user/login`, {
+  //     method: "PUT",
+  //     headers: {
+  //       Accept: "application/json",
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(loginIDS),
+  //   });
 
-    const token = await response.json();
+  //   const token = await response.json();
 
-    if (response.ok === true) {
-      alert("Connexion réussie");
+  //   if (response.ok === true) {
+  //     alert("Connexion réussie");
 
-      localStorage.setItem("userToken", token.body.token);
-      //console.log(localStorage.userToken)
-      // window.location.href = "../index.html";
-    } else {
-      alert(`Erreur dans l’identifiant ou le mot de passe`);
-    }
-  };
+  //     localStorage.setItem("userToken", token.body.token);
+  //     //console.log(localStorage.userToken)
+  //     // window.location.href = "../index.html";
+  //   } else {
+  //     alert(`Erreur dans l’identifiant ou le mot de passe`);
+  //   }
+  // };
 
   return (
     <form className="transac-perks">
       <label htmlFor="transac-type">Transaction type</label>
       <span>Electronic</span>
-      <br />
+
       <label htmlFor="transac-category">Category</label>
       <select
         type="text"
@@ -62,10 +62,10 @@ const TransacsPerks = () => {
         <option value="Serviec">Service</option>
         <option value="Other">Other</option>
       </select>
-      <br />
+
       <label htmlFor="transac-note">Note</label>
       <textarea
-        className=""
+        className="transac-note"
         type="text"
         id="transac-note"
         name="transac-note"
