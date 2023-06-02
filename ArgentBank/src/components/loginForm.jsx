@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({ username: "", password: "" });
-
+  const navigate = useNavigate();
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
@@ -12,7 +13,7 @@ const LoginForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    alert(`Name: ${formData.username}, Email: ${formData.password}`);
+    // alert(`Name: ${formData.username}, Email: ${formData.password}`);
     const loginIDS = {
       email: formData.username,
       password: formData.password,
@@ -31,8 +32,10 @@ const LoginForm = () => {
 
     if (response.ok === true) {
       alert("Connexion réussie");
-      localStorage.setItem("tokenID", token.token);
-      // window.location.href = "../index.html";
+
+      localStorage.setItem("userToken", token.body.token);
+      //console.log(localStorage.userToken)
+      navigate("/user-page");
     } else {
       alert(`Erreur dans l’identifiant ou le mot de passe`);
     }
