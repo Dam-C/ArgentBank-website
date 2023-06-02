@@ -1,0 +1,232 @@
+[
+  {
+    "user-account-ID": "US-00056-ST29051970-1-7768490JYFSBT",
+    "user-account-name": "Stark",
+    "user-account-firstname": "Tony",
+    "accounts": [
+      {
+        "account-name": "Argent Bank of America",
+        "Current-balance": "49,098.43",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-ABOA1-ST-7768490JYFSBT-2023-05",
+            "Date": "date",
+            "Description": "Golden Sun Bakery",
+            "Amount": "8.00",
+            "Balance": "7954.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-ABOA1-ST-7768490JYFSBT-2023-04",
+            "Date": "date",
+            "Description": "Red Horse Sport Cars",
+            "Amount": "22,999.00",
+            "Balance": "7954.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-ABOA1-ST-7768490JYFSBT-2023-03",
+            "Date": "date",
+            "Description": "Laudromatic",
+            "Amount": "13.50",
+            "Balance": "7954.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      },
+      {
+        "account-name": "Avengers Initiative Fund",
+        "Current-balance": "48,883,540,208.19",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-AIF1-ST-7768490JYFSBT-2023-05",
+            "Date": "date",
+            "Description": "Repairing New-Yoork",
+            "Amount": "19,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-AIF1-ST-7768490JYFSBT-2023-04",
+            "Date": "date",
+            "Description": "Sokovia damages and interests",
+            "Amount": "30,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-AIF1-ST-7768490JYFSBT-2023-03",
+            "Date": "date",
+            "Description": "Building spaceship",
+            "Amount": "4,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      },
+      {
+        "account-name": "Pepper Secrer Acccount",
+        "Current-balance": "967.22",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-05",
+            "Date": "date",
+            "Description": "Diner in Paris",
+            "Amount": "600.00",
+            "Balance": "12,000.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-04",
+            "Date": "date",
+            "Description": "Lattes in the morning",
+            "Amount": "9.99",
+            "Balance": "12,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-03",
+            "Date": "date",
+            "Description": "Movie",
+            "Amount": "15.45",
+            "Balance": "12,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "user-account-ID": "US-00056-RS04071920-1-0987335KSIXXP",
+    "user-account-name": "Rogers",
+    "user-account-firstname": "Steve",
+    "accounts": [
+      {
+        "account-name": "Argent Bank of America",
+        "Current-balance": "49,098.43",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-ABOA1-RS-0987335KSIXXP-2023-05",
+            "Date": "date",
+            "Description": "Golden Sun Bakery",
+            "Amount": "8.00",
+            "Balance": "7954.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-ABOA1-RS-0987335KSIXXP-2023-04",
+            "Date": "date",
+            "Description": "Red Horse Sport Cars",
+            "Amount": "22,999.00",
+            "Balance": "7954.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-ABOA1-RS-0987335KSIXXP-2023-03",
+            "Date": "date",
+            "Description": "Laudromatic",
+            "Amount": "13.50",
+            "Balance": "7954.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      },
+      {
+        "account-name": "Avengers Initiative Fund",
+        "Current-balance": "48,883,540,208.19",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-AIF1-RS-0987335KSIXXP-2023-05",
+            "Date": "date",
+            "Description": "Repairing New-Yoork",
+            "Amount": "19,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-AIF1-RS-0987335KSIXXP-2023-04",
+            "Date": "date",
+            "Description": "Sokovia damages and interests",
+            "Amount": "30,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-AIF1-RS-0987335KSIXXP-2023-03",
+            "Date": "date",
+            "Description": "Building spaceship",
+            "Amount": "4,000,000,000.00",
+            "Balance": "60,000,000,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      },
+      {
+        "account-name": "Brooklyn Neighborhood Fund",
+        "Current-balance": "76889.66",
+        "Transactions": [
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-05",
+            "Date": "date",
+            "Description": "Diner in Paris",
+            "Amount": "600.00",
+            "Balance": "12,000.00",
+            "Transaction-type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-04",
+            "Date": "date",
+            "Description": "Lattes in the morning",
+            "Amount": "9.99",
+            "Balance": "12,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          },
+          {
+            "transaction-ID": "tr-PSA1-ST-7768490JYFSBT-2023-03",
+            "Date": "date",
+            "Description": "Movie",
+            "Amount": "15.45",
+            "Balance": "12,000.00",
+            "Transaction type": "Electronic",
+            "Category": "",
+            "Note": ""
+          }
+        ]
+      }
+    ]
+  }
+]
