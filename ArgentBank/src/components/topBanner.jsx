@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import abLogo from "../assets/argentBankLogo.png";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const TopBanner = () => {
-  const testInProg = useSelector((state) => state.user);
-  console.log(testInProg);
+  // const testInProg = useSelector((state) => state.user);
+  // console.log(testInProg);
   return (
     <nav className="main-nav">
       <Link to="/" className="main-nav-logo">
@@ -16,10 +16,10 @@ const TopBanner = () => {
         <h1 className="sr-only">Argent Bank</h1>
       </Link>
       <Link to="/login-page">
-        <a className="main-nav-item" href="./sign-in.html">
+        <p className="main-nav-item" href="./sign-in.html">
           <i className="fa fa-user-circle"></i>
           Sign In
-        </a>
+        </p>
       </Link>
     </nav>
   );

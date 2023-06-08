@@ -1,15 +1,15 @@
 import { CheckAuth, Account } from "../0_elementsIndex/elementsIndex.jsx";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const UserPage = () => {
   CheckAuth();
-
-  /*  
-
-  Besoin d'une fonction qui va appeler la bdd pour réccup les comptes et les éléments associés pour les passer en props aux ccomposants accounts .. oupas vu que redux est censé le gérer :D
-*/
-
+  const dispatch = useDispatch();
   const [userNameAccount, setUserNameAcount] = useState("");
+  const actualToken = useSelector((state) => state.user.userToken);
+  const bearerToken = `Bearer ${actualToken}`;
+
+  /*
 
   const getUserName = async () => {
     const BACKEND_URL = "http://localhost:3001/api/v1";
@@ -25,13 +25,14 @@ const UserPage = () => {
     });
 
     const userDataAPI = await getUserInfos.json();
-    console.log(userDataAPI);
+    // console.log(userDataAPI);
     const userNameApi = await userDataAPI.body.firstName;
     setUserNameAcount(userNameApi);
   };
 
   getUserName();
-
+  
+  */
   return (
     <main className="main bg-dark">
       <div className="header">

@@ -54,7 +54,7 @@ const TransacsPerks = () => {
         value={formData.transacCategory}
         onChange={handleChange}
       >
-        <option value="" selected>
+        <option value="" defaultValue={""}>
           {" "}
         </option>
         <option value="Food">Food</option>

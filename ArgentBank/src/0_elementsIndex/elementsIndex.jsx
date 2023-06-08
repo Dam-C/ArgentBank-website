@@ -14,3 +14,8 @@ export { default as TransacsPerks } from "../components/transacsPerks.jsx";
 
 /* utils */
 export { default as CheckAuth } from "../helpers/checkAuth.jsx";
+
+/* mockup DB */
+export { default as MockUpDB } from "../1_mockUpDB/mockup-db.json";
+
+/* misccallaneous */

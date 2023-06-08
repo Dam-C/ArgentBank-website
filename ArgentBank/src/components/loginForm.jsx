@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { loginUser } from "../reduxStore/userSlice";
 
 const LoginForm = () => {
-  const [formData, setFormData] = useState({ username: "", password: "" });
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({ username: "", password: "" });
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
-
-  const BACKEND_URL = "http://localhost:3001/api/v1";
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,30 +19,11 @@ const LoginForm = () => {
       email: formData.username,
       password: formData.password,
     };
-    const response = await fetch(`${BACKEND_URL}/user/login`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(loginIDS),
+    dispatch(loginUser(loginIDS)).then((result) => {
+      if (result.payload) {
+        navigate("/user-page");
+      }
     });
-
-    const token = await response.json();
-
-    if (response.ok === true) {
-      alert("Connexion réussie");
-      localStorage.setItem("userToken", token.body.token);
-
-      /* 
-      
-      insérer ici une action pour envoyer l'ensemble des infos de l'utilisateur au store redux
-
-      */
-      navigate("/user-page");
-    } else {
-      alert(`Erreur dans l’identifiant ou le mot de passe`);
-    }
   };
 
   return (
@@ -49,7 +32,7 @@ const LoginForm = () => {
       <h1>Sign In</h1>
       <form onSubmit={handleSubmit}>
         <div className="input-wrapper">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Email</label>
           <input
             type="text"
             id="username"
