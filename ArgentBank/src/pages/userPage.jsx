@@ -25,6 +25,7 @@ const UserPage = () => {
     });
 
     const userDataAPI = await getUserInfos.json();
+    console.log(userDataAPI);
     const userNameApi = await userDataAPI.body.firstName;
     setUserNameAcount(userNameApi);
   };

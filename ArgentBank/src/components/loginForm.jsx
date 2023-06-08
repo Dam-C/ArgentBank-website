@@ -13,12 +13,10 @@ const LoginForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // alert(`Name: ${formData.username}, Email: ${formData.password}`);
     const loginIDS = {
       email: formData.username,
       password: formData.password,
     };
-    //console.log(loginIDS);
     const response = await fetch(`${BACKEND_URL}/user/login`, {
       method: "POST",
       headers: {
@@ -32,9 +30,13 @@ const LoginForm = () => {
 
     if (response.ok === true) {
       alert("Connexion réussie");
-
       localStorage.setItem("userToken", token.body.token);
-      //console.log(localStorage.userToken)
+
+      /* 
+      
+      insérer ici une action pour envoyer l'ensemble des infos de l'utilisateur au store redux
+
+      */
       navigate("/user-page");
     } else {
       alert(`Erreur dans l’identifiant ou le mot de passe`);
