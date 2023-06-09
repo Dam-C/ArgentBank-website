@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import abLogo from "../assets/argentBankLogo.png";
-// import { useSelector } from "react-redux";
 
 const TopBanner = () => {
-  // const testInProg = useSelector((state) => state.user);
-  // console.log(testInProg);
   return (
     <nav className="main-nav">
       <Link to="/" className="main-nav-logo">
@@ -21,6 +18,7 @@ const TopBanner = () => {
           Sign In
         </p>
       </Link>
+      <p>Logout</p>
     </nav>
   );
 };

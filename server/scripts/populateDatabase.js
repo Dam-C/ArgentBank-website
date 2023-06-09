@@ -8,7 +8,7 @@ const users = [
     email: "tony@stark.com",
     password: "password123",
     userName: "Iron",
-    accounts: [
+    userAccounts: [
       {
         accountName: "Argent Bank of America",
         currentBalance: 49098.43,
@@ -125,7 +125,7 @@ const users = [
     email: "steve@rogers.com",
     password: "password456",
     userName: "Captain",
-    accounts: [
+    userAccounts: [
       {
         accountName: "Argent Bank of America",
         currentBalance: 49098.43,

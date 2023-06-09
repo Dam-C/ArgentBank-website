@@ -1,27 +1,48 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
 import { callsAPI } from "../0_elementsIndex/constIndex";
+import mockupDB from "../1_mockUpDB/mockupDB";
 
 export const loginUser = createAsyncThunk(
   "user/loginUser",
   async (loginIDS) => {
     const request = await axios.post(`${callsAPI}user/login`, loginIDS);
-    console.log(request.data.body);
+    // console.log(request.data.body);
     const response = request.data.body;
-    console.log(response);
-    localStorage.setItem("user", JSON.stringify(response));
+    // console.log(response);
+    // localStorage.setItem("user", JSON.stringify(response));
     return response;
   }
 );
 
-export const userInfos = createAsyncThunk(
-  "user/userInfos",
+export const getUserInfos = createAsyncThunk(
+  "user/getUserInfos",
   async (bearerToken) => {
-    const request = await axios.post(`${callsAPI}user/profile`, bearerToken);
-    console.log(request);
+    //pour paramerer le header d'authorization avec le token, vu qu'on envoi un body vide
+    axios.defaults.headers.common = { Authorization: bearerToken };
+
+    const request = await axios.post(`${callsAPI}user/profile`);
+    const response = request.data.body;
+    const filteredUser = mockupDB.filter(
+      (user) => user.userAccountID === response.id
+    );
+    const filteredAccounts = filteredUser[0].accounts;
+    response.userAccounts = filteredAccounts;
+
+    return response;
   }
 );
+
+export const logOut = createAsyncThunk("user/logOut", async (state) => {
+  state.loggedIn = false;
+  state.userToken = null;
+  state.error = null;
+  state.userEMail = null;
+  state.userName = null;
+  state.userFirstName = null;
+  state.userLastName = null;
+  state.userID = [];
+});
 
 const userSlice = createSlice({
   name: "user",
@@ -29,6 +50,12 @@ const userSlice = createSlice({
     loggedIn: false,
     userToken: null,
     error: null,
+    userEMail: null,
+    userName: null,
+    userFirstName: null,
+    userLastName: null,
+    userID: null,
+    userAccounts: [],
   },
   extraReducers: (builder) => {
     builder
@@ -44,16 +71,16 @@ const userSlice = createSlice({
         action.error.message === "Request failed with status code 400"
           ? (state.error = "Identifiants invalides")
           : (state.error = action.error.message);
+      })
+      .addCase(getUserInfos.fulfilled, (state, action) => {
+        state.userEMail = action.payload.email;
+        state.userName = action.payload.userName;
+        state.userFirstName = action.payload.firstName;
+        state.userLastName = action.payload.lastName;
+        state.userID = action.payload.id;
+        state.userAccounts = action.payload.userAccounts;
       });
   },
 });
 
 export default userSlice.reducer;
-
-// 1 action redux = 1 objet
-
-// export const store = configureStore({
-//   reducer: {
-//     user: userSlice.reducer,
-//   },
-// });

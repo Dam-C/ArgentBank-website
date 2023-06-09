@@ -1,9 +1,9 @@
-const CheckAuth = async () => {
-  const BACKEND_URL = "http://localhost:3001/api/v1";
+import { callsAPI } from "../0_elementsIndex/constIndex";
 
+const CheckAuth = async () => {
   const userAuth = `Bearer ${localStorage.getItem("userToken")}`;
 
-  const getUserInfos = await fetch(`${BACKEND_URL}/user/profile`, {
+  const getUserData = await fetch(`${callsAPI}/user/profile`, {
     method: "POST",
     headers: {
       Accept: "application/json",

@@ -1,12 +1,13 @@
 import { AccountTransacs } from "../0_elementsIndex/elementsIndex.jsx";
+import { PropTypes } from "prop-types";
 
-const Account = () => {
+const Account = (props) => {
   return (
     <section className="account">
       <div className="account-head-wrapper">
         <div className="account-content-wrapper">
-          <h3 className="account-title">Argent Bank Checking (x8349)</h3>
-          <p className="account-amount">$2,082.79</p>
+          <h3 className="account-title">{props.accountName}</h3>
+          <p className="account-amount">$ {props.currentBalance}</p>
           <p className="account-amount-description">Available Balance</p>
         </div>
         <div className="account-content-wrapper cta">
