@@ -7,7 +7,7 @@
       {
         "accountID": "acTS01",
         "accountName": "Argent Bank of America",
-        "currentbalance": "49,098.43",
+        "currentBalance": "49098.43",
         "transactions": [
           {
             "transactionID": "tr-ABOA1-ST-7768490JYFSBT-2023-05",
@@ -23,7 +23,7 @@
             "transactionID": "tr-ABOA1-ST-7768490JYFSBT-2023-04",
             "date": "date",
             "description": "Red Horse Sport Cars",
-            "amount": "22,999.00",
+            "amount": "22999.00",
             "balance": "7954.00",
             "transactionType": "Electronic",
             "category": "",
@@ -44,14 +44,14 @@
       {
         "accountID": "acTS02",
         "accountName": "Avengers Initiative Fund",
-        "currentbalance": "48,883,540,208.19",
+        "currentBalance": "48883540208.19",
         "transactions": [
           {
             "transactionID": "tr-AIF1-ST-7768490JYFSBT-2023-05",
             "date": "date",
             "description": "Repairing New-Yoork",
-            "amount": "19,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "19000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -60,8 +60,8 @@
             "transactionID": "tr-AIF1-ST-7768490JYFSBT-2023-04",
             "date": "date",
             "description": "Sokovia damages and interests",
-            "amount": "30,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "30000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -70,8 +70,8 @@
             "transactionID": "tr-AIF1-ST-7768490JYFSBT-2023-03",
             "date": "date",
             "description": "Building spaceship",
-            "amount": "4,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "4000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -81,14 +81,14 @@
       {
         "accountID": "acTS03",
         "accountName": "Pepper Secret Acccount",
-        "currentbalance": "967.22",
+        "currentBalance": "967.22",
         "transactions": [
           {
             "transactionID": "tr-PSA1-ST-7768490JYFSBT-2023-05",
             "date": "date",
             "description": "Diner in Paris",
             "amount": "600.00",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -98,7 +98,7 @@
             "date": "date",
             "description": "Lattes in the morning",
             "amount": "9.99",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -108,7 +108,7 @@
             "date": "date",
             "description": "Movie",
             "amount": "15.45",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -125,7 +125,7 @@
       {
         "accountID": "acSR01",
         "accountName": "Argent Bank of America",
-        "currentbalance": "49,098.43",
+        "currentBalance": "49098.43",
         "transactions": [
           {
             "transactionID": "tr-ABOA1-RS-0987335KSIXXP-2023-05",
@@ -141,7 +141,7 @@
             "transactionID": "tr-ABOA1-RS-0987335KSIXXP-2023-04",
             "date": "date",
             "description": "Red Horse Sport Cars",
-            "amount": "22,999.00",
+            "amount": "22999.00",
             "balance": "7954.00",
             "transactionType": "Electronic",
             "category": "",
@@ -162,14 +162,14 @@
       {
         "accountID": "acSR02",
         "accountName": "Avengers Initiative Fund",
-        "currentbalance": "48,883,540,208.19",
+        "currentBalance": "48883540208.19",
         "transactions": [
           {
             "transactionID": "tr-AIF1-RS-0987335KSIXXP-2023-05",
             "date": "date",
             "description": "Repairing New-Yoork",
-            "amount": "19,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "19000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -178,8 +178,8 @@
             "transactionID": "tr-AIF1-RS-0987335KSIXXP-2023-04",
             "date": "date",
             "description": "Sokovia damages and interests",
-            "amount": "30,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "30000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -188,8 +188,8 @@
             "transactionID": "tr-AIF1-RS-0987335KSIXXP-2023-03",
             "date": "date",
             "description": "Building spaceship",
-            "amount": "4,000,000,000.00",
-            "balance": "60,000,000,000.00",
+            "amount": "4000000000.00",
+            "balance": "60000000000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -199,14 +199,14 @@
       {
         "accountID": "acSR03",
         "accountName": "Brooklyn Neighborhood Fund",
-        "currentbalance": "76889.66",
+        "currentBalance": "76889.66",
         "transactions": [
           {
             "transactionID": "tr-PSA1-ST-7768490JYFSBT-2023-05",
             "date": "date",
             "description": "Diner in Paris",
             "amount": "600.00",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -216,7 +216,7 @@
             "date": "date",
             "description": "Lattes in the morning",
             "amount": "9.99",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""
@@ -226,7 +226,7 @@
             "date": "date",
             "description": "Movie",
             "amount": "15.45",
-            "balance": "12,000.00",
+            "balance": "12000.00",
             "transactionType": "Electronic",
             "category": "",
             "note": ""

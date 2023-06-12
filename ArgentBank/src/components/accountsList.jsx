@@ -1,27 +1,20 @@
-import { Account } from "../0_elementsIndex/elementsIndex";
+import { AccountItem } from "../0_elementsIndex/elementsIndex";
 import { useSelector } from "react-redux";
 
 const AccountsList = () => {
-  //   const accountsListDisplay = async () => {
-  //     useSelector((state) => state.user.userAccounts);
-  //   };
-  //   console.log(accountsListDisplay);
+  const userAccountsToDisplay = useSelector((state) => state.user.userAccounts);
+
+  console.log(userAccountsToDisplay);
   return (
     <section>
       <h2 className="sr-only">Accounts</h2>
-      {useSelector((state) => state.user.userAccounts).map(
-        ({ accountID, accountName, currentBalance, transactions }) => {
-          return (
-            <div key={accountID}>
-              <Account
-                accountName={accountName}
-                currentBalance={currentBalance}
-                transactions={transactions}
-              />
-            </div>
-          );
-        }
-      )}
+      {userAccountsToDisplay.map((acc) => {
+        return (
+          <div key={acc.accountID}>
+            <AccountItem account={acc} />
+          </div>
+        );
+      })}
     </section>
   );
 };

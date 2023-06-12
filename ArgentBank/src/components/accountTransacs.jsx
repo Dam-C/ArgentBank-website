@@ -19,14 +19,7 @@ va aussi envoyer les données saisis par l'utilisateur pour categoriser les tran
 */
 
   return (
-    <aside className="transactions">
-      <div className="transacs-titles">
-        <span className="transacs-title transacs-title__date">Date</span>
-        <span className="transacs-title transacs-title__desc">Description</span>
-        <span className="transacs-title transacs-title__amount">Amount</span>
-        <span className="transacs-title transacs-title__balance">Balance</span>
-      </div>
-
+    <article>
       <div className="transaction">
         <div className="transaction-infos">
           <span className="transac-info transac-info__date">08/06/2024</span>
@@ -40,7 +33,7 @@ va aussi envoyer les données saisis par l'utilisateur pour categoriser les tran
 
         <TransacsPerks />
       </div>
-    </aside>
+    </article>
   );
 };
 
