@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -10,20 +9,17 @@ const EditNameForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const actualToken = useSelector((state) => state.user.userToken);
-  const bearerToken = `Bearer ${actualToken}`;
-  console.log(bearerToken);
-  const handleChange = async (event) => {
-    const { name, value } = event.target;
+  const handleChange = async (e) => {
+    const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const newUserName = {
       userName: formData.userName,
     };
-    dispatch(chgUserName(newUserName, bearerToken)).then((result) => {
+    dispatch(chgUserName(newUserName)).then((result) => {
       if (result.payload) {
         navigate("/user-page");
       }

@@ -18,7 +18,6 @@ export const getUserInfos = createAsyncThunk(
   async (bearerToken) => {
     //pour paramerer le header d'authorization avec le token, vu qu'on envoi un body vide
     axios.defaults.headers.common = { Authorization: bearerToken };
-
     const request = await axios.post(`${callsAPI}user/profile`);
     const response = request.data.body;
     const filteredUser = mockupDB.filter(
@@ -37,19 +36,10 @@ export const userLogOut = createAsyncThunk("user/logOut", async () => {
 
 export const chgUserName = createAsyncThunk(
   "user/chgUserName",
-  async (newUserName, bearerToken) => {
-    /**
-     * envoyer le new username a l'api
-     * récup les nouvelles infos de l'user via l'api
-     * mettre le state redux à jour avec la réponse
-     *
-     */
-    axios.defaults.headers.common = { Authorization: bearerToken };
-
+  async (newUserName) => {
     const request = await axios.put(`${callsAPI}user/profile`, newUserName);
     const response = request.data.body;
-
-    console.log(response);
+    return response;
   }
 );
 
@@ -102,7 +92,7 @@ const userSlice = createSlice({
       })
 
       .addCase(chgUserName.fulfilled, () => {
-        console.log("userName changed");
+        alert("Username succesfully changed");
       });
   },
 });
