@@ -5,7 +5,7 @@ import iconSecurity from "../assets/icon-security.png";
 const HomeContent = () => {
   return (
     <>
-      <main>
+      <article>
         <div className="hero">
           <section className="hero-content">
             <h2 className="sr-only">Promoted Content</h2>
@@ -49,7 +49,7 @@ const HomeContent = () => {
             </p>
           </div>
         </section>
-      </main>
+      </article>
     </>
   );
 };

@@ -8,6 +8,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({ username: "", password: "" });
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));

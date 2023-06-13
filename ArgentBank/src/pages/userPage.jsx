@@ -1,13 +1,15 @@
 import {
-  /*CheckAuth,*/ AccountsList,
+  AccountsList,
+  EditNameForm,
 } from "../0_elementsIndex/elementsIndex.jsx";
-// import { useState } from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import { getUserInfos } from "../reduxStore/userSlice";
 import { useEffect } from "react";
 
 const UserPage = () => {
   const dispatch = useDispatch();
+
   const actualToken = useSelector((state) => state.user.userToken);
   const bearerToken = `Bearer ${actualToken}`;
 
@@ -24,6 +26,7 @@ const UserPage = () => {
           {useSelector((state) => state.user.userFirstName)} !
         </h1>
         <button className="edit-button">Edit Name</button>
+        <EditNameForm />
       </div>
       <AccountsList />
     </main>

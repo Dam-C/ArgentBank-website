@@ -12,11 +12,11 @@ export { default as AccountsList } from "../components/accountsList.jsx";
 export { default as AccountItem } from "../components/accountItem.jsx";
 export { default as AccountTransacs } from "../components/accountTransacs.jsx";
 export { default as TransacsPerks } from "../components/transacsPerks.jsx";
+export { default as EditNameForm } from "../components/editNameForm.jsx";
 
 /* utils */
-export { default as CheckAuth } from "../helpers/checkAuth.jsx";
 export { default as FilterUserAccounts } from "../helpers/filterUserAccounts.jsx";
-
+export { default as ProtectedRoute } from "../helpers/protectedRoute";
 /* mockup DB */
 
 /* miscallaneous */

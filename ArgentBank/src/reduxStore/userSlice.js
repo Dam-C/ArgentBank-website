@@ -7,10 +7,8 @@ export const loginUser = createAsyncThunk(
   "user/loginUser",
   async (loginIDS) => {
     const request = await axios.post(`${callsAPI}user/login`, loginIDS);
-    // console.log(request.data.body);
     const response = request.data.body;
-    // console.log(response);
-    // localStorage.setItem("user", JSON.stringify(response));
+    alert("Connexion réussie !");
     return response;
   }
 );
@@ -33,16 +31,27 @@ export const getUserInfos = createAsyncThunk(
   }
 );
 
-export const logOut = createAsyncThunk("user/logOut", async (state) => {
-  state.loggedIn = false;
-  state.userToken = null;
-  state.error = null;
-  state.userEMail = null;
-  state.userName = null;
-  state.userFirstName = null;
-  state.userLastName = null;
-  state.userID = [];
+export const userLogOut = createAsyncThunk("user/logOut", async () => {
+  return alert("Utilisateur déconnecté");
 });
+
+export const chgUserName = createAsyncThunk(
+  "user/chgUserName",
+  async (newUserName, bearerToken) => {
+    /**
+     * envoyer le new username a l'api
+     * récup les nouvelles infos de l'user via l'api
+     * mettre le state redux à jour avec la réponse
+     *
+     */
+    axios.defaults.headers.common = { Authorization: bearerToken };
+
+    const request = await axios.put(`${callsAPI}user/profile`, newUserName);
+    const response = request.data.body;
+
+    console.log(response);
+  }
+);
 
 const userSlice = createSlice({
   name: "user",
@@ -79,6 +88,21 @@ const userSlice = createSlice({
         state.userLastName = action.payload.lastName;
         state.userID = action.payload.id;
         state.userAccounts = action.payload.userAccounts;
+      })
+      .addCase(userLogOut.fulfilled, (state) => {
+        state.loggedIn = false;
+        state.userToken = null;
+        state.error = null;
+        state.userEMail = null;
+        state.userName = null;
+        state.userFirstName = null;
+        state.userLastName = null;
+        state.userID = null;
+        state.userAccounts = [];
+      })
+
+      .addCase(chgUserName.fulfilled, () => {
+        console.log("userName changed");
       });
   },
 });

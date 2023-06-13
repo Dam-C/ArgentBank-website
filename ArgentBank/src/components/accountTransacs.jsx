@@ -12,9 +12,7 @@ Va recevoir un tableau d'objets avec les props :
     - note = str
 
 générer une ligne collapsible pour chaque transaction
-
 va aussi envoyer les données saisis par l'utilisateur pour categoriser les transacctions
-
 
 */
 

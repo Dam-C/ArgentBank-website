@@ -1,10 +1,17 @@
-import { HomeContent } from "../0_elementsIndex/elementsIndex.jsx";
+import { Outlet } from "react-router-dom";
+import { Footer, TopBanner } from "../0_elementsIndex/elementsIndex.jsx";
 
 const HomePage = () => {
   return (
-    <article>
-      <HomeContent />
-    </article>
+    <>
+      <header>
+        <TopBanner />
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 };
 

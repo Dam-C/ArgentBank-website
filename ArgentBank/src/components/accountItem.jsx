@@ -4,10 +4,6 @@ import { PropTypes } from "prop-types";
 
 const AccountItem = (props) => {
   const { account } = props;
-  console.log(account);
-
-  const currentMony = account.currentBalance;
-  console.log(currentMony);
 
   return (
     <section
@@ -20,7 +16,7 @@ const AccountItem = (props) => {
             {account.accountName === undefined ? "NOPE" : account?.accountName}
           </h3>
           <p className="account-amount">
-            $ {account === undefined ? "nop" : Number(account?.currentBalance)}
+            $ {account === undefined ? "NOPE" : Number(account?.currentBalance)}
           </p>
           <p className="account-amount-description">Available Balance</p>
         </div>
