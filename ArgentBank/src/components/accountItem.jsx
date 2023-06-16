@@ -1,14 +1,13 @@
-import { AccountTransacs } from "../0_elementsIndex/elementsIndex.jsx";
+import { AccountTransacItem } from "../0_elementsIndex/elementsIndex.jsx";
 import { PropTypes } from "prop-types";
 // import { useSelector } from "react-redux";
 
 const AccountItem = (props) => {
   const { account } = props;
-
   return (
     <section
       className="account"
-      id={account.accountID === "undefined" ? "" : account.accountId}
+      id={account.accountID === "undefined" ? "" : account?.accountId}
     >
       <div className="account-head-wrapper">
         <div className="account-content-wrapper">
@@ -38,7 +37,7 @@ const AccountItem = (props) => {
         {account.transactions.map((transaction) => {
           return (
             <div key={transaction.transactionID}>
-              <AccountTransacs />
+              <AccountTransacItem transactionInfos={transaction} />
             </div>
           );
         })}

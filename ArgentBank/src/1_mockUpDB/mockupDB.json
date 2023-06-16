@@ -10,8 +10,18 @@
         "currentBalance": "49098.43",
         "transactions": [
           {
+            "transactionID": "tr-acTS01-2023-06",
+            "date": "23/05/2023",
+            "description": "Platinum cargo",
+            "amount": "230000.00",
+            "balance": "7954.00",
+            "transactionType": "Electronic",
+            "category": "",
+            "note": ""
+          },
+          {
             "transactionID": "tr-acTS01-2023-05",
-            "date": "date",
+            "date": "22/05/2023",
             "description": "Golden Sun Bakery",
             "amount": "8.00",
             "balance": "7954.00",
@@ -21,7 +31,7 @@
           },
           {
             "transactionID": "tr-acTS01-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Red Horse Sport Cars",
             "amount": "22999.00",
             "balance": "7954.00",
@@ -31,7 +41,7 @@
           },
           {
             "transactionID": "tr-acTS01-2023-03",
-            "date": "date",
+            "date": "17/05/2023",
             "description": "Laudromatic",
             "amount": "13.50",
             "balance": "7954.00",
