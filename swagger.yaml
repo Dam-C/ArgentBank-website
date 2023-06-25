@@ -101,6 +101,116 @@ paths:
           description: Invalid Fields
         "500":
           description: Internal Server Error
+  /accounts/{userID}:
+    parameters:
+      - in: path
+        name: userID
+        description: return array of accounts linked to userID
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: User unique ID
+        required: true
+        schema:
+          $ref: "#/definitions/GetUserAccounts"
+    get:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: User Acccounts API
+      description: API for fetching a user accounts
+      operationId: getAccountsByUserId
+
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: User accounts retrieved successully
+          schema:
+            $ref: "#/definitions/UserAccounts"
+        "400":
+          description: Invalid Fields
+        "500":
+          description: Internal Server Error
+  /accounts/{accountID}/transactions:
+    get:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: User Accounts API
+      description: API for fetching an account's transactions and sort them in ascending or descending order
+      operationId: getAccounts
+      parameters:
+        - name: accountID
+          in: path
+          description: ID of account to return
+          required: true
+          type: string
+        - name: accountID
+          in: body
+          description: ID of account to return
+          required: true
+          schema:
+            $ref: "#/definitions/GetAccountTransactions"
+        - name: filter
+          in: query
+          description: Filter current Month transactions (use "currentMonth")
+          required: false
+          type: string
+        - name: sort
+          in: query
+          description: sort transacations (asc or desc)
+          required: false
+          type: string
+          enum: [asc, desc]
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: User account's transaction retrieved successully
+          schema:
+            $ref: "#/definitions/Transactions"
+        "400":
+          description: Invalid Fields
+        "500":
+          description: Internal Server Error
+  /accounts/{accountID}/transactions/{transactionID}:
+    put:
+      security:
+        - Bearer: []
+      tags:
+        - User Module
+      summary: User Accounts API
+      description: Update a specific transaction in user account
+      parameters:
+        - name: accountID
+          in: path
+          description: ID of account to return
+          required: true
+          type: string
+        - name: transactionID
+          in: path
+          description: ID of transaction to edit
+          required: true
+          type: string
+        - name: transactionUpdate
+          in: body
+          description: elements of transaction to update
+          required: true
+          schema:
+            $ref: "#/definitions/TransactionUpdate"
+      responses:
+        "200":
+          description: User transactions successully updated
+          schema:
+            $ref: "#/definitions/TransactionUpdated"
+        "400":
+          description: Invalid Fields
+        "500":
+          description: Internal Server Error
 securityDefinitions:
   Bearer:
     type: apiKey
@@ -155,4 +265,89 @@ definitions:
     type: object
     properties:
       userName:
+        type: string
+  GetUserAccounts:
+    type: object
+    properties:
+      userID:
+        type: string
+        description: user ID
+  UserAccounts:
+    type: array
+    items:
+      $ref: "#/definitions/UserAccount"
+  UserAccount:
+    properties:
+      accountOwnerID:
+        type: string
+        description: unique ID of user linked to the account
+      accountID:
+        type: string
+        description: unique ID of account
+      establishment:
+        type: string
+        description: name of the bank holding the account
+      currentBalance:
+        type: string
+        description: amount of money currently available
+      transactions:
+        type: array
+        items:
+          $ref: "#/definitions/Transactions"
+        description: arraycontaining all of the account's transactions
+  GetAccountTransactions:
+    type: object
+    properties:
+      acccountID:
+        type: string
+        description: account unique ID
+  Transactions:
+    type: array
+    items:
+      $ref: "#/definitions/Transaction"
+  Transaction:
+    type: object
+    properties:
+      transactionID:
+        type: string
+        description: transaction unique ID
+      date:
+        type: string
+        description: date of payment
+      description:
+        type: string
+        description: vendor information
+      amount:
+        type: string
+        description: amount paid
+      balance:
+        type: string
+        description: balance at time of payment
+      type:
+        type: string
+        description: type of payment
+      category:
+        type: string
+        description: user selected category
+      note:
+        type: string
+        description: user written note aboout transaction
+  TransactionUpdate:
+    type: object
+    properties:
+      transactionID:
+        type: string
+        description: transaction unique ID
+      category:
+        type: string
+        description: user selected category
+      note:
+        type: string
+        description: user written note aboout transaction
+  TransactionUpdated:
+    type: object
+    properties:
+      status:
+        type: integer
+      message:
         type: string
