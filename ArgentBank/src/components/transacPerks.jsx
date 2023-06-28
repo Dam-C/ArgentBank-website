@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TransacsPerks = () => {
+const TransacPerks = () => {
   // va gérer l'envoi du formulaire pour la modification des infos de la transaction
 
   const [formData, setFormData] = useState({ username: "", password: "" });
@@ -9,37 +9,6 @@ const TransacsPerks = () => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
-
-  // const BACKEND_URL = "http://localhost:3001/api/v1";
-
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const loginIDS = {
-  //     email: formData.username,
-  //     password: formData.password,
-  //   };
-  //   //console.log(loginIDS);
-  //   const response = await fetch(`${BACKEND_URL}/user/login`, {
-  //     method: "PUT",
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-type": "application/json",
-  //     },
-  //     body: JSON.stringify(loginIDS),
-  //   });
-
-  //   const token = await response.json();
-
-  //   if (response.ok === true) {
-  //     alert("Connexion réussie");
-
-  //     localStorage.setItem("userToken", token.body.token);
-  //     //console.log(localStorage.userToken)
-  //     // window.location.href = "../index.html";
-  //   } else {
-  //     alert(`Erreur dans l’identifiant ou le mot de passe`);
-  //   }
-  // };
 
   return (
     <form className="transac-perks">
@@ -80,4 +49,4 @@ const TransacsPerks = () => {
   );
 };
 
-export default TransacsPerks;
+export default TransacPerks;

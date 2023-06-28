@@ -8,7 +8,6 @@ export const loginUser = createAsyncThunk(
   async (loginIDS) => {
     const request = await axios.post(`${callsAPI}user/login`, loginIDS);
     const response = request.data.body;
-    alert("Connexion réussie !");
     return response;
   }
 );
@@ -62,6 +61,7 @@ const userSlice = createSlice({
         state.loggedIn = true;
         state.userToken = action.payload.token;
         state.error = null;
+        alert("Connexion réussie !");
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loggedIn = false;
@@ -70,6 +70,7 @@ const userSlice = createSlice({
         action.error.message === "Request failed with status code 400"
           ? (state.error = "Identifiants invalides")
           : (state.error = action.error.message);
+        alert("Identifiants invalides !");
       })
       .addCase(getUserInfos.fulfilled, (state, action) => {
         state.userEMail = action.payload.email;

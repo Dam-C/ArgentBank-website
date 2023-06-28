@@ -1,5 +1,5 @@
-import { TransacsPerks } from "../0_elementsIndex/elementsIndex.jsx";
 import { PropTypes } from "prop-types";
+import { Link } from "react-router-dom";
 
 const AccountTransacItem = (props) => {
   const { transactionInfos } = props;
@@ -24,10 +24,10 @@ const AccountTransacItem = (props) => {
             ${props.transactionInfos.amount}
           </span>
           <span className="transac-info transac-info__balance">$4890.00</span>
-          <span className="transac-collapse">v</span>
+          <Link to="/user-edit-transac">
+            <button className="edit-transac-btn">Edit transactions</button>
+          </Link>
         </div>
-
-        <TransacsPerks />
       </div>
     </article>
   );

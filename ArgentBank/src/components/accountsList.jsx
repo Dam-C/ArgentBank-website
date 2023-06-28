@@ -5,7 +5,7 @@ const AccountsList = () => {
   const userAccountsToDisplay = useSelector((state) => state.user.userAccounts);
 
   return (
-    <section>
+    <section className="accounts">
       <h2 className="accounts-header">Accounts</h2>
       {userAccountsToDisplay.map((acc) => {
         return (

@@ -1,8 +1,11 @@
 import { AccountTransacItem } from "../0_elementsIndex/elementsIndex.jsx";
 import { PropTypes } from "prop-types";
-// import { useSelector } from "react-redux";
+import { useState, useRef } from "react";
 
 const AccountItem = (props) => {
+  const [displayTransacs, setDisplayTransacs] = useState(false);
+  const parentRef = useRef();
+
   const { account } = props;
   return (
     <section
@@ -20,10 +23,27 @@ const AccountItem = (props) => {
           <p className="account-amount-description">Available Balance</p>
         </div>
         <div className="account-content-wrapper cta">
-          <button className="transaction-button">View transactions</button>
+          <button
+            className="transaction-button"
+            onClick={() => setDisplayTransacs(!displayTransacs)}
+          >
+            View transactions
+          </button>
         </div>
       </div>
-      <aside className="transactions">
+      <aside
+        className="transactions collapse__content-container"
+        ref={parentRef}
+        style={
+          displayTransacs
+            ? {
+                height: parentRef.current.scrollHeight + "px",
+              }
+            : {
+                height: "0px",
+              }
+        }
+      >
         <div className="transacs-titles">
           <span className="transacs-title transacs-title__date">Date</span>
           <span className="transacs-title transacs-title__desc">

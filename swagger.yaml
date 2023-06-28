@@ -335,9 +335,6 @@ definitions:
   TransactionUpdate:
     type: object
     properties:
-      transactionID:
-        type: string
-        description: transaction unique ID
       category:
         type: string
         description: user selected category

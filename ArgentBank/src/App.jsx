@@ -5,6 +5,7 @@ import {
   HomePage,
   LoginPage,
   ProtectedRoute,
+  EditTransacPage,
   UserPage,
 } from "./0_elementsIndex/elementsIndex.jsx";
 
@@ -20,6 +21,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <UserPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/user-edit-transac"
+            element={
+              <ProtectedRoute>
+                <EditTransacPage />
               </ProtectedRoute>
             }
           />

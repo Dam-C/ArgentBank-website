@@ -6,6 +6,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { getUserInfos } from "../reduxStore/userSlice";
 import { useEffect } from "react";
+import { useState, useRef } from "react";
 
 const UserPage = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,8 @@ const UserPage = () => {
   const actualToken = useSelector((state) => state.user.userToken);
   const bearerToken = `Bearer ${actualToken}`;
 
+  const [displayEditUsername, setDisplayUsername] = useState(false);
+  const parentRef = useRef();
   useEffect(() => {
     dispatch(getUserInfos(bearerToken));
   }, [dispatch, bearerToken]);
@@ -25,8 +28,27 @@ const UserPage = () => {
           <br />
           {useSelector((state) => state.user.userFirstName)} !
         </h1>
-        <button className="edit-button">Edit Name</button>
-        <EditNameForm />
+        <button
+          className="edit-button"
+          onClick={() => setDisplayUsername(!displayEditUsername)}
+        >
+          Edit Name
+        </button>
+        <div
+          className="collapse__content-container"
+          ref={parentRef}
+          style={
+            displayEditUsername
+              ? {
+                  height: parentRef.current.scrollHeight + "px",
+                }
+              : {
+                  height: "0px",
+                }
+          }
+        >
+          <EditNameForm />
+        </div>
       </div>
       <AccountsList />
     </main>
