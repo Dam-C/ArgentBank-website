@@ -13,7 +13,7 @@ const AccountItem = (props) => {
       id={account.accountID === "undefined" ? "" : account?.accountId}
     >
       <div className="account-head-wrapper">
-        <div className="account-content-wrapper">
+        <div className="account-content-wrapper account-infos">
           <h3 className="account-title">
             {account.accountName === undefined ? "NOPE" : account?.accountName}
           </h3>
@@ -22,9 +22,9 @@ const AccountItem = (props) => {
           </p>
           <p className="account-amount-description">Available Balance</p>
         </div>
-        <div className="account-content-wrapper cta">
+        <div className="account-content-wrapper account-view-transacs-btn">
           <button
-            className="transaction-button"
+            className="btn transaction-button"
             onClick={() => setDisplayTransacs(!displayTransacs)}
           >
             View transactions

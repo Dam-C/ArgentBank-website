@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const AccountTransacItem = (props) => {
   const { transactionInfos } = props;
-
+  console.log(transactionInfos);
   return (
     <article
       id={
-        props.transactionInfos.transactionID === "undefined"
+        transactionInfos?.transactionID === "undefined"
           ? ""
           : props?.transactionInfos.transactionID
       }
@@ -15,17 +15,17 @@ const AccountTransacItem = (props) => {
       <div className="transaction">
         <div className="transaction-infos">
           <span className="transac-info transac-info__date">
-            {props.transactionInfos.date}
+            {transactionInfos?.date}
           </span>
           <span className="transac-info transac-info__desc">
             {props.transactionInfos.description}
           </span>
           <span className="transac-info transac-info__amount">
-            ${props.transactionInfos.amount}
+            $ {props.transactionInfos.amount}
           </span>
           <span className="transac-info transac-info__balance">$4890.00</span>
           <Link to="/user-edit-transac">
-            <button className="edit-transac-btn">Edit transactions</button>
+            <button className="btn edit-transac-btn">Edit transaction</button>
           </Link>
         </div>
       </div>

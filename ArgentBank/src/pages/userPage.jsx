@@ -29,7 +29,7 @@ const UserPage = () => {
           {useSelector((state) => state.user.userFirstName)} !
         </h1>
         <button
-          className="edit-button"
+          className="btn edit-name-btn"
           onClick={() => setDisplayUsername(!displayEditUsername)}
         >
           Edit Name

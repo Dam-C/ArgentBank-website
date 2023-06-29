@@ -59,7 +59,7 @@ const EditNameForm = () => {
           readOnly
         />
       </div>
-      <button className="chg-userName-BTN apply-changes" type="submit">
+      <button className="btn send-userNameChg-btn" type="submit">
         Apply changes
       </button>
     </form>

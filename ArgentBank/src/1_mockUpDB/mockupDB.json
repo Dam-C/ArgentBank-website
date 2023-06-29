@@ -58,7 +58,7 @@
         "transactions": [
           {
             "transactionID": "tr-acTS02-2023-05",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Repairing New-Yoork",
             "amount": "19000000000.00",
             "balance": "60000000000.00",
@@ -68,7 +68,7 @@
           },
           {
             "transactionID": "tr-acTS02-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Sokovia damages and interests",
             "amount": "30000000000.00",
             "balance": "60000000000.00",
@@ -78,7 +78,7 @@
           },
           {
             "transactionID": "tr-acTS02-2023-03",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Building spaceship",
             "amount": "4000000000.00",
             "balance": "60000000000.00",
@@ -95,7 +95,7 @@
         "transactions": [
           {
             "transactionID": "tr-acTS03-2023-05",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Diner in Paris",
             "amount": "600.00",
             "balance": "12000.00",
@@ -105,7 +105,7 @@
           },
           {
             "transactionID": "tr-acTS03-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Lattes in the morning",
             "amount": "9.99",
             "balance": "12000.00",
@@ -115,7 +115,7 @@
           },
           {
             "transactionID": "tr-acTS03-2023-03",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Movie",
             "amount": "15.45",
             "balance": "12000.00",
@@ -139,7 +139,7 @@
         "transactions": [
           {
             "transactionID": "tr-acSR01-2023-05",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Golden Sun Bakery",
             "amount": "8.00",
             "balance": "7954.00",
@@ -149,7 +149,7 @@
           },
           {
             "transactionID": "tr-acSR01-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Red Horse Sport Cars",
             "amount": "22999.00",
             "balance": "7954.00",
@@ -159,7 +159,7 @@
           },
           {
             "transactionID": "tr-acSR01-2023-03",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Laudromatic",
             "amount": "13.50",
             "balance": "7954.00",
@@ -176,7 +176,7 @@
         "transactions": [
           {
             "transactionID": "tr-acSR02-2023-05",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Repairing New-Yoork",
             "amount": "19000000000.00",
             "balance": "60000000000.00",
@@ -186,7 +186,7 @@
           },
           {
             "transactionID": "tr-acSR02-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Sokovia damages and interests",
             "amount": "30000000000.00",
             "balance": "60000000000.00",
@@ -196,7 +196,7 @@
           },
           {
             "transactionID": "tr-acSR02-2023-03",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Building spaceship",
             "amount": "4000000000.00",
             "balance": "60000000000.00",
@@ -213,7 +213,7 @@
         "transactions": [
           {
             "transactionID": "tr-acSR03-2023-05",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Diner in Paris",
             "amount": "600.00",
             "balance": "12000.00",
@@ -223,7 +223,7 @@
           },
           {
             "transactionID": "tr-acSR03-2023-04",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Lattes in the morning",
             "amount": "9.99",
             "balance": "12000.00",
@@ -233,7 +233,7 @@
           },
           {
             "transactionID": "tr-acSR03-2023-03",
-            "date": "date",
+            "date": "20/05/2023",
             "description": "Movie",
             "amount": "15.45",
             "balance": "12000.00",
