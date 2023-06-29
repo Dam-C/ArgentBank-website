@@ -4,6 +4,25 @@ This codebase contains the code needed to run the backend for Argent Bank.
 
 ## Getting Started
 
+Repo Links: 
+https://github.com/Dam-C/ArgentBank-website
+https://github.com/Dam-C/ArgentBank-website.git
+
+Once the folder is downloaded
+Use your terminal and type :
+npm intall
+npm run dev:server
+
+then go to the ArgentBank folder (cli: cd ArgentBank) and in your terminal type :
+
+npm intall
+npm run dev
+
+You will then be able to access the website with your brower following the localhost link provided.
+
+All informations below are legacy, it is usefull to check if your machine has everything it needs (mongo db) to run the site.
+
+
 ### Prerequisites
 
 Argent Bank uses the following tech stack:
