@@ -45,6 +45,9 @@ const TransacPerks = () => {
         placeholder="30 char max"
         maxLength="30"
       ></textarea>
+      <button className="btn send-transac-perks-btn" type="submit">
+        Validate changes
+      </button>
     </form>
   );
 };

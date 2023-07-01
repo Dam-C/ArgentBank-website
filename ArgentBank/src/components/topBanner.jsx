@@ -7,6 +7,7 @@ const TopBanner = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isUserLoggedIn = useSelector((state) => state.user.loggedIn);
+  const currentUser = useSelector((state) => state.user.userName);
 
   const handleLogOut = async () => {
     dispatch(userLogOut());
@@ -36,7 +37,7 @@ const TopBanner = () => {
       ) : (
         <div>
           <Link to="/user-page">
-            <p className="main-nav-item">User Page</p>
+            <p className="main-nav-item">{currentUser}</p>
           </Link>
           <Link to="/">
             <p className="main-nav-item" onClick={handleLogOut}>

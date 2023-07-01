@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const AccountTransacItem = (props) => {
   const { transactionInfos } = props;
-  console.log(transactionInfos);
   return (
     <article
       id={

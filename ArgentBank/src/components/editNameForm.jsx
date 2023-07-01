@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { chgUserName } from "../reduxStore/userSlice";
 
 const EditNameForm = () => {
   const userIntels = useSelector((state) => state.user);
   const [formData, setFormData] = useState({ userName: "" });
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const handleChange = async (e) => {
     const { name, value } = e.target;
@@ -19,11 +17,7 @@ const EditNameForm = () => {
     const newUserName = {
       userName: formData.userName,
     };
-    dispatch(chgUserName(newUserName)).then((result) => {
-      if (result.payload) {
-        navigate("/user-page");
-      }
-    });
+    dispatch(chgUserName(newUserName));
   };
 
   return (

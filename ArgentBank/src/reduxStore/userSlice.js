@@ -92,7 +92,8 @@ const userSlice = createSlice({
         state.userAccounts = [];
       })
 
-      .addCase(chgUserName.fulfilled, () => {
+      .addCase(chgUserName.fulfilled, (state, action) => {
+        state.userName = action.payload.userName;
         alert("Username succesfully changed");
       });
   },

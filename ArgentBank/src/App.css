@@ -1,1 +1,511 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.transac-note,html{font-family:Avenir,Helvetica,Arial,sans-serif}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;box-sizing:border-box}.account,.account-content-wrapper,.argent-bank,.features,.header,.input-wrapper,.transactions,main{display:flex;flex-direction:column}.argent-bank{height:100vh}main{flex:1;justify-content:center;align-items:center;width:100%}.footer{flex-shrink:0;display:flex;justify-content:center;border-top:2px solid #ccc;padding:2rem 0 1.5rem;width:100%}.account,.main-nav{justify-content:space-between}.bg-dark{background-color:#12002b}.accounts{width:85%}.accounts-header{position:relative;font-size:2rem;font-weight:700;color:#fff;margin-left:10%;margin-right:10%;margin-bottom:20px;padding-top:20px;border-top:1px solid #fff;width:80%;text-align:center}.sr-only{border:0!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;width:1px!important;white-space:nowrap!important}.main-nav{display:flex;align-items:center;padding:5px 20px}.main-nav a{font-weight:700;color:#2c3e50}.main-nav div{display:flex;gap:25px}.main-nav a.router-link-exact-active{color:#42b983}.main-nav-item{text-decoration:none;margin-right:.5rem}.main-nav-item:hover{text-decoration:underline}.main-nav-logo{display:flex;align-items:center}.main-nav-logo-image{max-width:100%;width:200px}.hero{background-image:url("./assets/bank-tree.jpeg");background-position:0 -50px;background-size:cover;background-repeat:no-repeat;height:300px;position:relative}.hero-content{position:relative;top:2rem;width:200px;background:#fff;padding:2rem;text-align:left;margin:0 auto}.hero-content .subtitle{font-weight:700;font-size:1rem;margin:0}.hero-content .text{margin-bottom:0;font-size:.9rem}@media (min-width:920px){.hero{height:400px;background-position:0 33%}.hero-content{position:absolute;top:50px;right:50px;width:300px;margin:2rem}.hero-content .subtitle{font-size:1.5rem}.hero-content .text{font-size:1.2rem}.features{flex-direction:row}}.feature-icon{width:100px;border:10px solid #00bc77;border-radius:50%;padding:1rem}.feature-item{flex:1;padding:2.5rem}.feature-item-title{color:#222;font-size:1.25rem;font-weight:700;margin-bottom:.5rem}.sign-in-content{background-color:#fff;width:300px;padding:2rem;border-radius:10px}.sign-in-icon{font-size:3rem}.input-remember label{margin-left:.25rem}.input-wrapper{text-align:left;margin-bottom:1rem}.input-wrapper label{font-weight:700}.input-wrapper input{padding:5px;font-size:1.2rem}.header-greeting{font-size:2rem;font-weight:700}.account{align-items:center;border:1px solid #000;background-color:#fff;border-radius:5px;width:80%;margin:0 auto 2rem;padding:1.5rem}.btn,.transaction{border-radius:5px}.account-head-wrapper{display:flex;width:100%;justify-content:space-between;gap:10px}.account-content-wrapper{width:100%}.account-infos{text-align:left;flex:2}.account-view-transacs-btn{justify-content:center;align-items:flex-end;flex:0.5}.account-title{margin-bottom:10px;padding:0;font-size:.8rem;font-weight:400}.account-amount{margin-bottom:5px;font-size:2.3rem;font-weight:700}.btn{border-color:#00bc77;background-color:#00bc77;color:#fff;font-size:1rem;font-weight:700;margin-top:20px;padding:10px}.sign-in-btn{width:100%;margin-top:1rem}.edit-name-btn,.send-userNameChg-btn{font-size:.9rem}.transaction-button{width:110px;font-size:.8rem;font-weight:400;margin-top:0}.edit-transac-btn{margin-top:0;background-color:#fff;color:#00623e;font-size:.8rem;font-weight:100;padding:5px}transaction-button{width:1000px}.header{justify-content:center;align-items:center;color:#fff;padding:2rem 0}.transactions{width:100%;gap:10px}.transacs-titles{margin:0 15px 0 10px}.transacs-titles,.transaction-infos{display:flex;justify-content:space-between;text-align:center}.collapse-global,.transac-info,.transacs-title{flex:1}.transaction{background-color:#00bc77;color:#fff;padding:10px}.transac-perks{display:flex;flex-wrap:wrap;margin-top:10px;text-align:left;gap:5px}.transac-perks :first-child,.transac-perks :nth-child(2),.transac-perks :nth-child(3),.transac-perks :nth-child(4),.transac-perks :nth-child(5),.transac-perks :nth-child(6){width:45%}.transac-note{text-decoration:none;background-color:transparent;border:none;resize:none;color:#000}.collapse__content,.collapse__head{border-radius:5px;box-sizing:border-box}logoutBTN{cursor:pointer}.inactive{display:hidden}.chg-userName-form{width:300px}.collapse__head{z-index:100;position:relative;background-color:#ff6060;color:#fff;display:flex;justify-content:space-between;align-items:center;cursor:pointer}.collapse__content-container{margin-top:15px;height:0;overflow:hidden;transition:height .3s ease-in-out}.collapse__content{width:100%;z-index:-10;color:#ff6060;font-size:24px;background-color:#f6f6f6;padding:36px 18px 20px;margin-top:-10px;list-style-type:none}.collapse__head{font-size:13px;padding:5px 12px}.transac-id{font-weight:300;color:#00774c}.edit-transac{background-color:#fff;width:50%;border-radius:10px;padding:20px}.edit-transac h3{font-size:1.5rem;font-weight:500;margin-bottom:10px}.edit-transac p{margin-bottom:20px}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.transac-note,
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  box-sizing: border-box;
+}
+.account,
+.account-content-wrapper,
+.argent-bank,
+.features,
+.header,
+.input-wrapper,
+.transactions,
+main {
+  display: flex;
+  flex-direction: column;
+}
+.argent-bank {
+  height: 100vh;
+}
+main {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #ccc;
+  padding: 2rem 0 1.5rem;
+  width: 100%;
+}
+.account,
+.main-nav {
+  justify-content: space-between;
+}
+.bg-dark {
+  background-color: #12002b;
+}
+.accounts {
+  width: 85%;
+}
+.accounts-header {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+  width: 80%;
+  text-align: center;
+}
+.sr-only {
+  border: 0 !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+.main-nav a {
+  font-weight: 700;
+  color: #2c3e50;
+}
+.main-nav div {
+  display: flex;
+  gap: 25px;
+}
+.main-nav a.router-link-exact-active {
+  color: #42b983;
+}
+.main-nav-item {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.main-nav-item:hover {
+  text-decoration: underline;
+}
+.main-nav-logo {
+  display: flex;
+  align-items: center;
+}
+.main-nav-logo-image {
+  max-width: 100%;
+  width: 200px;
+}
+.hero {
+  background-image: url("./assets/bank-tree.jpeg");
+  background-position: 0 -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+.hero-content {
+  position: relative;
+  top: 2rem;
+  width: 200px;
+  background: #fff;
+  padding: 2rem;
+  text-align: left;
+  margin: 0 auto;
+}
+.hero-content .subtitle {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+}
+.hero-content .text {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+@media (min-width: 920px) {
+  .hero {
+    height: 400px;
+    background-position: 0 33%;
+  }
+  .hero-content {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    margin: 2rem;
+  }
+  .hero-content .subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-content .text {
+    font-size: 1.2rem;
+  }
+  .features {
+    flex-direction: row;
+  }
+}
+.feature-icon {
+  width: 100px;
+  border: 10px solid #00bc77;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.feature-item {
+  flex: 1;
+  padding: 2.5rem;
+}
+.feature-item-title {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.sign-in-content {
+  background-color: #fff;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.sign-in-icon {
+  font-size: 3rem;
+}
+.input-remember label {
+  margin-left: 0.25rem;
+}
+.input-wrapper {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.input-wrapper label {
+  font-weight: 700;
+}
+.input-wrapper input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.header-greeting {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.account {
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+}
+.btn,
+.transaction {
+  border-radius: 5px;
+}
+.account-head-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+.account-content-wrapper {
+  width: 100%;
+}
+.account-infos {
+  text-align: left;
+  flex: 2;
+}
+.account-view-transacs-btn {
+  justify-content: center;
+  align-items: flex-end;
+  flex: 0.5;
+}
+.send-transac-perks-btn {
+  margin: 0;
+  margin: auto;
+}
+.account-title {
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.account-amount {
+  margin-bottom: 5px;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.btn {
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px;
+}
+.sign-in-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.edit-name-btn,
+.send-userNameChg-btn {
+  font-size: 0.9rem;
+}
+.transaction-button {
+  width: 110px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+.edit-transac-btn {
+  margin-top: 0;
+  background-color: #fff;
+  color: #00623e;
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding: 5px;
+}
+transaction-button {
+  width: 1000px;
+}
+.header {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+.transactions {
+  width: 100%;
+  gap: 10px;
+}
+.transacs-titles {
+  margin: 0 15px 0 10px;
+}
+.transacs-titles,
+.transaction-infos {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.collapse-global,
+.transac-info,
+.transacs-title {
+  flex: 1;
+}
+.transaction {
+  background-color: #00bc77;
+  color: #fff;
+  padding: 10px;
+}
+.transac-perks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  text-align: left;
+  gap: 5px;
+}
+.transac-perks :first-child,
+.transac-perks :nth-child(2),
+.transac-perks :nth-child(3),
+.transac-perks :nth-child(4),
+.transac-perks :nth-child(5),
+.transac-perks :nth-child(6) {
+  width: 45%;
+}
+.transac-note {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: #000;
+}
+.collapse__content,
+.collapse__head {
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+logoutBTN {
+  cursor: pointer;
+}
+.inactive {
+  display: hidden;
+}
+.chg-userName-form {
+  width: 300px;
+}
+.collapse__head {
+  z-index: 100;
+  position: relative;
+  background-color: #ff6060;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.collapse__content-container {
+  margin-top: 15px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+.collapse__content {
+  width: 100%;
+  z-index: -10;
+  color: #ff6060;
+  font-size: 24px;
+  background-color: #f6f6f6;
+  padding: 36px 18px 20px;
+  margin-top: -10px;
+  list-style-type: none;
+}
+.collapse__head {
+  font-size: 13px;
+  padding: 5px 12px;
+}
+.transac-id {
+  font-weight: 300;
+  color: #00774c;
+}
+.edit-transac {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.edit-transac h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.edit-transac p {
+  margin-bottom: 20px;
+}
